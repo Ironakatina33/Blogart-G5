@@ -11,7 +11,7 @@ include '../../../header.php';
         </div>
         <div class="col-md-12">
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/status/create.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
                 <div class="form-group">
                     <label for="libStat">libStat</label>
                     <input id="libStat" class="form-control" type="text" name="libStat">

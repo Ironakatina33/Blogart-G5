@@ -1,8 +1,8 @@
 <?php
 include '../../../header.php';
 
-$numStat = $_GET['numStat'];
-$libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
+$numArt = $_GET['numArt'];
+$libStat = sql_select("STATUT", "libStat", "numArt = $numArt")[0]['libStat'];
 
 ?>
 
@@ -15,10 +15,10 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
         </div>
         <div class="col-md-12">
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/status/edit.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/articles/edit.php' ?>" method="post">
                 <div class="form-group">
                     <label for="libStat">libStat</label>
-                    <input id="numStat" class="form-control" type="text" name="numStat" value="<?php echo($numStat) ?> ">
+                    <input id="numArt" class="form-control" type="text" name="numArt" value="<?php echo($numArt) ?> ">
                     <input id="libStat" class="form-control" type="text" name="libStat" value="<?php echo($libStat) ?>" >
                 </div>
                 <div class="form-group mt-2">

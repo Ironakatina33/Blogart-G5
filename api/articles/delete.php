@@ -2,8 +2,6 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-
-
 $libTitrArt= $_POST['libTitrArt'];
 
 $libChapoArt= $_POST['libChapoArt'];
@@ -26,9 +24,10 @@ $urlPhotArt= $_POST['urlPhotArt'];
 
 $numThem= $_POST['numThem'];
 
+print_r($_POST);
 
-
-sql_insert('ARTICLE', 'libTitrArt, libChapoArt, libAccrochArt, parag1Art, libSsTitr1Art, parag2Art, libSsTitr2Art, parag3Art, libConclArt, urlPhotArt , numThem',
-                    "' $libTitrArt', '$libChapoArt', '$libAccrochArt','$parag1Art', '$libSsTitr1Art', '$parag2Art', '$libSsTitr2Art', '$parag3Art', '$libConclArt' , '$urlPhotArt', $numThem");
+sql_delete('STATUT', "numStat = $numStat");
 
 header('Location: ../../views/backend/articles/list.php');
+
+
