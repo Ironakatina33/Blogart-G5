@@ -43,3 +43,11 @@ require_once 'config.php';
   </div>
 </nav>
 
+<body style="background-color:#840331">
+
+<style>
+  *{
+    box-sizing:border-box;
+    outline:1px solid limegreen;
+  }
+  </style>
