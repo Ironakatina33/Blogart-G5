@@ -48,6 +48,6 @@ require_once 'config.php';
 <style>
   *{
     box-sizing:border-box;
-    outline:1px solid limegreen;
+    outline:0px solid limegreen;
   }
   </style>
