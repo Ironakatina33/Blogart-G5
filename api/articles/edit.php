@@ -2,9 +2,31 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-$libStat = $_POST['libStat'];
-$numStat = $_POST['numStat'];
+$numArt = $_POST['numArt'];
 
-sql_update('STATUT', "libStat = '$libStat'", "numStat ='$numStat'");
+$libTitrArt = $_POST['libTitrArt'];
 
-header('Location: ../../views/backend/status/list.php');
+$libChapoArt = $_POST['libChapoArt'];
+
+$libAccrochArt = $_POST['libAccrochArt'];
+
+$parag1Art = $_POST['parag1Art'];
+
+$libSsTitr1Art = $_POST['libSsTitr1Art'];
+
+$parag2Art = $_POST['parag2Art'];
+
+$libSsTitr2Art = $_POST['libSsTitr2Art'];
+
+$parag3Art = $_POST['parag3Art'];
+
+$libConclArt = $_POST['libConclArt'];
+
+$urlPhotArt = $_POST['urlPhotArt'];
+
+$numThem = $_POST['numThem'];
+
+
+sql_update('ARTICLE', "libTitrArt = '$libTitrArt', libChapoArt = '$libChapoArt', libAccrochArt = '$libAccrochArt', parag1Art = '$parag1Art', libSsTitr1Art = '$libSsTitr1Art'", "numArt ='$numArt'");
+
+header('Location: ../../views/backend/articles/list.php');

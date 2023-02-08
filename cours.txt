@@ -1,0 +1,15 @@
+password_hash() - crypter
+
+password_verify() - vérifier
+
+après vérif, lui ajouter sa session (comme les cookies mais pas les cookies)
+
+clé dans les cookies qui sais 
+
+$_SESSION
+
+------------------
+
+sql_escape (a utiliser comme sur didi)
+
+$_session id=$id
