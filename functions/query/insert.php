@@ -1,5 +1,4 @@
 <?php
-
 function sql_insert($from, $keys, $values) {
     global $DB;
 

@@ -1,5 +1,4 @@
 <?php
-
 function sql_update($from, $set, $where) {
     global $DB;
 

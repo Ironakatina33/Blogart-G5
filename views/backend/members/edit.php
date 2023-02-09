@@ -1,8 +1,8 @@
 <?php
 include '../../../header.php';
 
-$numStat = $_GET['numStat'];
-$libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
+$numMemb = $_GET['numMemb'];
+$pseudoMemb = sql_select("MEMBRE", "pseudoMemb", "numMemb = $numMemb")[0]['pseudoMemb'];
 
 ?>
 
@@ -11,15 +11,15 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Edit Status</h1>
+            <h1>Edit Membre</h1>
         </div>
         <div class="col-md-12">
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/status/edit.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/users/edit.php' ?>" method="post">
                 <div class="form-group">
-                    <label for="libStat">libStat</label>
-                    <input id="numStat" class="form-control" type="text" name="numStat" value="<?php echo($numStat) ?> ">
-                    <input id="libStat" class="form-control" type="text" name="libStat" value="<?php echo($libStat) ?>" >
+                    <label for="pseudoMemb">pseudoMemb</label>
+                    <input id="numMemb" class="form-control" type="text" name="numMemb" value="<?php echo($numMemb) ?> ">
+                    <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" value="<?php echo($pseudoMemb) ?>" >
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-danger">Confirm update ?</button>

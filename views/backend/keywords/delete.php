@@ -7,8 +7,8 @@ include '../../../header.php';
     exit();
 } */
 
-$numMemb = $_GET['numMemb'];
-$pseudoMemb = sql_select("MEMBRE", "pseudoMemb", "numMemb = $numMemb")[0]['pseudoMemb'];
+$numStat = $_GET['numStat'];
+$libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
 
 ?>
 
@@ -20,11 +20,11 @@ $pseudoMemb = sql_select("MEMBRE", "pseudoMemb", "numMemb = $numMemb")[0]['pseud
         </div>
         <div class="col-md-12">
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/users/delete.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/status/delete.php' ?>" method="post">
                 <div class="form-group">
-                    <label for="pseudoMemb">pseudoMemb</label>
-                    <input id="numMemb" class="form-control" style="display: none" type="text" name="numMemb" value="<?php echo($numMemb) ?>" readonly="readonly">
-                    <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" value="<?php echo($pseudoMemb) ?>" readonly="readonly">
+                    <label for="libStat">libStat</label>
+                    <input id="numStat" class="form-control" style="display: none" type="text" name="numStat" value="<?php echo($numStat) ?>" readonly="readonly">
+                    <input id="libStat" class="form-control" type="text" name="libStat" value="<?php echo($libStat) ?>" readonly="readonly">
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-danger">Confirm deletion ?</button>

@@ -4,27 +4,27 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
 
 
-$libTitrArt= $_POST['libTitrArt'];
+$libTitrArt= sql_escape($_POST['libTitrArt']);
 
-$libChapoArt= $_POST['libChapoArt'];
+$libChapoArt= sql_escape($_POST['libChapoArt']);
 
-$libAccrochArt= $_POST['libAccrochArt'];
+$libAccrochArt= sql_escape($_POST['libAccrochArt']);
 
-$parag1Art= $_POST['parag1Art'];
+$parag1Art= sql_escape($_POST['parag1Art']);
 
-$libSsTitr1Art= $_POST['libSsTitr1Art'];
+$libSsTitr1Art= sql_escape($_POST['libSsTitr1Art']);
 
-$parag2Art= $_POST['parag2Art'];
+$parag2Art= sql_escape($_POST['parag2Art']);
 
-$libSsTitr2Art= $_POST['libSsTitr2Art'];
+$libSsTitr2Art= sql_escape($_POST['libSsTitr2Art']);
 
-$parag3Art= $_POST['parag3Art'];
+$parag3Art= sql_escape($_POST['parag3Art']);
 
-$libConclArt= $_POST['libConclArt'];
+$libConclArt= sql_escape($_POST['libConclArt']);
 
-$urlPhotArt= $_POST['urlPhotArt'];
+$urlPhotArt= sql_escape($_POST['urlPhotArt']);
 
-$numThem= $_POST['numThem'];
+$numThem= sql_escape($_POST['numThem']);
 
 
 
