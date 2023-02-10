@@ -11,6 +11,13 @@ $numArt = $_GET['numArt'];
 $libTitrArt = sql_select("ARTICLE", "libTitrArt", "numArt = $numArt")[0]['libTitrArt'];
 
 ?>
+<style> 
+h1{
+    color:white;
+}
+label{
+    color:white;
+}</style>
 
 <!--Bootstrap form to create a new status-->
 <div class="container">

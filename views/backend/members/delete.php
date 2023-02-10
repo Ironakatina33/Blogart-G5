@@ -11,7 +11,13 @@ $numMemb = $_GET['numMemb'];
 $pseudoMemb = sql_select("MEMBRE", "pseudoMemb", "numMemb = $numMemb")[0]['pseudoMemb'];
 
 ?>
-
+<style> 
+h1{
+    color:white;
+}
+label{
+    color:white;
+}</style>
 <!--Bootstrap form to create a new status-->
 <div class="container">
     <div class="row">

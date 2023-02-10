@@ -21,7 +21,13 @@ $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 
 
 ?>
-
+<style> 
+h1{
+    color:white;
+}
+label{
+    color:white;
+}</style>
 
 <!--Bootstrap form to create a new status-->
 <div class="container">

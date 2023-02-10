@@ -48,19 +48,13 @@
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="color:black">
           <!-- Links -->
           <p>
-            <a href="#!" class="text-reset">Mention Légal</a>
+            <a href="/views/frontend/mention.php" class="text-reset">Mentions légales</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Politique de Confidentialité</a>
+            <a href="/views/frontend/politique.php" class="text-reset">Politique de Confidentialité</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">CGVU</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">CGS Éditeurs</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Gestion des cookies</a>
+            <a href="/views/frontend/CGU" class="text-reset">CGU</a>
           </p>
         </div>
         <!-- Grid column -->

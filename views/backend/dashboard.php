@@ -2,7 +2,13 @@
 include '../../header.php';
 
 ?>
-
+<style> 
+h1{
+    color:white;
+}
+label{
+    color:white;
+}</style>
 <!--Bootstrap admin dashboard template-->
 <div>
     <div class="container">

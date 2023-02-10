@@ -9,7 +9,13 @@ $passMemb = sql_select("MEMBRE", "passMemb", "numMemb = $numMemb")[0]['passMemb'
 $eMailMemb = sql_select("MEMBRE", "eMailMemb", "numMemb = $numMemb")[0]['eMailMemb'];
 $numStat = sql_select("MEMBRE", "numStat", "numMemb = $numMemb")[0]['numStat'];
 ?>
-
+<style> 
+h1{
+    color:white;
+}
+label{
+    color:white;
+}</style>
 
 <!--Bootstrap form to create a new status-->
 <div class="container">

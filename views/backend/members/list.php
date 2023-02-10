@@ -10,7 +10,13 @@ include '../../../header.php'; // contains the header and call to config.php
 //Load all statuses
 $statuses = sql_select("MEMBRE", "*");
 ?>
-
+<style> 
+h1{
+    color:white;
+}
+label{
+    color:white;
+}</style>
 <!-- Bootstrap default layout to display all status in foreach -->
 <div class="container">
     <div class="row">

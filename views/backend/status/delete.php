@@ -11,7 +11,13 @@ $numStat = $_GET['numStat'];
 $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
 
 ?>
-
+<style> 
+h1{
+    color:white;
+}
+label{
+    color:white;
+}</style>
 <!--Bootstrap form to create a new status-->
 <div class="container">
     <div class="row">
