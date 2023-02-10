@@ -44,7 +44,6 @@ $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
                     <input id="libSsTitr2Art" class="form-control" type="text" name="libSsTitr2Art" value="<?php echo($libSsTitr2Art) ?>" >
                     <input id="parag3Art" class="form-control" type="text" name="parag3Art" value="<?php echo($parag3Art) ?>" >
                     <input id="libConclArt" class="form-control" type="text" name="libConclArt" value="<?php echo($libConclArt) ?>" >
-                    <input id="urlPhotArt" class="form-control" type="url" name="urlPhotArt" value="<?php echo($urlPhotArt) ?>" >
                     <input id="numThem" class="form-control" type="text" name="numThem" value="<?php echo($numThem) ?>" >
 
                 </div>

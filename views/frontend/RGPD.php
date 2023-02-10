@@ -16,6 +16,8 @@ require_once 'config.php';
 
 //load php scripts
 ?>
+
+
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #840331;">
@@ -59,6 +61,8 @@ print_r(curl("https://reqres.in/api/users", "POST", '{"name": "morpheus", "job":
 ?>
 
 </body>
+
+
 
 <footer class="text-center text-lg-start text-muted" style="background-color:#FFFFFF">
   <!-- Section: Social media -->

@@ -2,29 +2,33 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-$numArt = $_POST['numArt'];
+if(isset($_FILES)) {
+    $path = upload_image($_FILES);
+    }
 
-$libTitrArt = $_POST['libTitrArt'];
+$numArt = sql_escape($_POST['numArt']);
 
-$libChapoArt = $_POST['libChapoArt'];
+$libTitrArt = sql_escape($_POST['libTitrArt']);
 
-$libAccrochArt = $_POST['libAccrochArt'];
+$libChapoArt = sql_escape($_POST['libChapoArt']);
 
-$parag1Art = $_POST['parag1Art'];
+$libAccrochArt = sql_escape($_POST['libAccrochArt']);
 
-$libSsTitr1Art = $_POST['libSsTitr1Art'];
+$parag1Art = sql_escape($_POST['parag1Art']);
 
-$parag2Art = $_POST['parag2Art'];
+$libSsTitr1Art = sql_escape($_POST['libSsTitr1Art']);
 
-$libSsTitr2Art = $_POST['libSsTitr2Art'];
+$parag2Art = sql_escape($_POST['parag2Art']);
 
-$parag3Art = $_POST['parag3Art'];
+$libSsTitr2Art = sql_escape($_POST['libSsTitr2Art']);
 
-$libConclArt = $_POST['libConclArt'];
+$parag3Art = sql_escape($_POST['parag3Art']);
 
-$urlPhotArt = $_POST['urlPhotArt'];
+$libConclArt = sql_escape($_POST['libConclArt']);
 
-$numThem = $_POST['numThem'];
+$urlPhotArt = sql_escape($path);
+
+$numThem = sql_escape($_POST['numThem']);
 
 
 sql_update('ARTICLE', "libTitrArt = '$libTitrArt', libChapoArt = '$libChapoArt', libAccrochArt = '$libAccrochArt', parag1Art = '$parag1Art', libSsTitr1Art = '$libSsTitr1Art'", "numArt ='$numArt'");

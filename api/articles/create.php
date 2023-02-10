@@ -2,6 +2,9 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
+if(isset($_FILES)) {
+    $path = upload_image($_FILES);
+    }
 
 
 $libTitrArt= sql_escape($_POST['libTitrArt']);
@@ -22,7 +25,7 @@ $parag3Art= sql_escape($_POST['parag3Art']);
 
 $libConclArt= sql_escape($_POST['libConclArt']);
 
-$urlPhotArt= sql_escape($_POST['urlPhotArt']);
+$urlPhotArt= sql_escape($path);
 
 $numThem= sql_escape($_POST['numThem']);
 

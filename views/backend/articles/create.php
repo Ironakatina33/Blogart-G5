@@ -11,7 +11,7 @@ include '../../../header.php';
         </div>
         <div class="col-md-12">
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post" enctype='multipart/form-data' >
                 <div class="form-group">
                     <label for="libTitrArt">libTitrArt</label>
                     <input id="libTitrArt" class="form-control" type="text" name="libTitrArt" required>
@@ -40,8 +40,8 @@ include '../../../header.php';
                     <label for="libConclArt">libConclArt</label>
                     <input id="libConclArt" class="form-control" type="text" name="libConclArt">
 
-                    <label for="urlPhotArt">urlPhotArt</label>
-                    <input id="urlPhotArt" class="form-control" type="url" name="urlPhotArt">
+                    <label for="urlPhotArt">image</label>
+                    <input class="form-control" type="file" name="file" id="file">
 
                     <label for="numThem">numThem</label>
                     <input id="numThem" class="form-control" type="text" name="numThem" required>
