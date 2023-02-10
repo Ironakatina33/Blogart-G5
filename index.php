@@ -29,6 +29,8 @@ print_r(curl("https://reqres.in/api/users", "POST", '{"name": "morpheus", "job":
                 <div class="row">
                     <div class="col">
                         <img src="<?php echo (ROOT_URL . $ARTICLES["urlPhotArt"]) ?>" class="img-fluid" alt="Chateau"></a>
+                        <br>
+                        <br>
                     </div>
                     <div class="col">
                         <?php 

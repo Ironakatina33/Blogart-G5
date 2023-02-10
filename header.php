@@ -41,8 +41,8 @@ require_once 'config.php';
     <!--right align-->
     <div class="d-flex">
       <!--<a class="btn btn-primary m-1" href="/views/backend/login.php" role="button">Accueil</a>-->
-      <a class="btn btn-dark m-1" href="/views/backend/register.php" role="button">Article</a>
-      <a class="btn btn-primary m-1" href="/views/backend/login.php" role="button">Mon compte</a>
+      <!-- <a class="btn btn-dark m-1" href="/views/backend/register.php" role="button">Article</a> -->
+      <!--<a class="btn btn-primary m-1" href="/views/backend/login.php" role="button">Mon compte</a> -->
     </div>
   </div>
 </nav>
